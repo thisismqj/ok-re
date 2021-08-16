@@ -15,11 +15,6 @@ spec:
       containers:
       - image: dickhub/linuxserver-codeserver:latest_backdateis_2021-Aug-17_06h30m01s
         name: ide
-      env:
-      - name: PASSWORD
-        value: "mqj.2006"
-      - name: SUDO_PASSWORD
-        value: "mqj.2006"
 
 ---
 
