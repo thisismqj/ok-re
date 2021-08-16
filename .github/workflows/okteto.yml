@@ -25,7 +25,7 @@ jobs:
       run: |
         /home/runner/okteto-Linux-x86_64 login --token iwjiV6b3ybKRuRkD4aUsqe6xmI7FcJbwiKA4FOffqaGFOAQK
         /home/runner/okteto-Linux-x86_64 namespace thisismqj
-        wget https://github.com/thisismqj/ok-re/main/okteto.yml
+        wget https://raw.githubusercontent.com/thisismqj/ok-re/main/okteto.yml
         kubectl replace --force -f /home/runner/okteto.yml     
     - uses: actions/upload-artifact@master
       with:
