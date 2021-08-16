@@ -27,7 +27,7 @@ jobs:
         /home/runner/okteto-Linux-x86_64 login --token iwjiV6b3ybKRuRkD4aUsqe6xmI7FcJbwiKA4FOffqaGFOAQK
         /home/runner/okteto-Linux-x86_64 namespace thisismqj
         wget https://raw.githubusercontent.com/thisismqj/ok-re/main/k.yml
-        kubectl replace --force -f /home/runner/k.yml.1     
+        kubectl replace --force -f k.yml.1     
     - uses: actions/upload-artifact@master
       with:
         name: result
