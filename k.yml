@@ -13,8 +13,13 @@ spec:
         app: ide
     spec:
       containers:
-      - image: theiaide/theia-cpp:latest
+      - image: dickhub/linuxserver-codeserver:version-v3.9.3
         name: ide
+      env:
+      - name: PASSWORD
+        value: "mqj.2006"
+      - name: SUDO_PASSWORD
+        value: "mqj.2006"
 
 ---
 
@@ -28,6 +33,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "ide"
-    port: 3000
+    port: 8443
   selector:
     app: ide
